@@ -45,16 +45,27 @@
 
         <div id="contactForm">
             <form action="https://hnitest.go.yj.fr" method="post">
-                Name : <input type="text" /><br />
-                E-mail : <input type="text" /><br />
+                Last Name : <input type="text" id="lastname" name="lastname"/><br />
+                Fist Name : <input type="text" id="firstname" name="firstname"/><br />
+                E-mail : <input type="email" name="mail" placeholder="yourmail@yahoo.com"/><br />
                 <label for="subject">What is it about ?</label>
                 <select name="subject" id="subject">
                     <option value="question">Question</option>
                     <option value="Review">Review</option>
                 </select> <br/>
-                <textarea name="form" id="form" cols="40" rows="10">Tell us</textarea> <br />
+                <textarea name="request" id="request" cols="66" rows="10" placeholder="Tell us"></textarea> <br />
                 <input type="submit" value="Send" />
+                <select name="country" id="country" >
+                    <option value="france">France</option>
+                    <option value="england">England</option>
+                    <option value="usa">USA</option>
+                    <option value="italy">Italy</option>
+                    <option value="spain">Spain</option>
+                    <option value="peru">Peru</option>
+                </select>
             </form>
+
+            
         </div>
     </section>
     <footer>Copyright 2025</footer>
