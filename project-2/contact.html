@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+   
+
+  <!-- Navigation bar -->
+  <div class="container-fluid-md">
+    <nav class="navbar navbar-expand-md fixed-top navbar-light" id="navigationbar">
+      
+        <a class="navbar-brand" href="index.html"><img id="logo" src="images/Logo.png" alt=""></a> <!-- Clickable logo -->
+        
+        <div class="collapse navbar-collapse">
+        
+          <div class="navbar-nav nav-pills nav-filled">
+            <div class="nav-item">
+
+              <a class="nav-link" href="index.html">Home</a>
+            </div>
+
+            <div class="nav-item dropdown">
+              <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Store</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="product-1.html">Men</a>
+                <a class="dropdown-item" href="product-2.html">Women</a>
+              </div>
+            </div> 
+
+            <div class="nav-item">
+
+              <a class="nav-link" href="about.html">About Us</a>
+
+            </div>
+
+
+            <div class="nav-item dropdown">
+              <button class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Contact</button>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item active" href="contact.html">Contact us</a>
+                <a class="dropdown-item" href="findUs.html">Find us</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    </nav>
+</div>
+
+    <div class="container-fluid-md">
+    <form action="https://hnitest.go.yj.fr" method="post">
+
+        <div class="row">
+            <div class="col-12">
+                <h1>Contact Us</h1>
+                <p>You have a question for us or want to share your experience with our product ?</p>
+                <p>Write to us and we will get back to you !</p>
+            </div>
+        </div>
+        
+        <div class="row g-2" id="contactForm">
+            <div class="col-12">
+                <div class="input-group">
+                    <span class="input-group-text">Your Name</span>
+                    <input type="text" class="form-control" placeholder="First name">
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="input-group">
+                    <span class="input-group-text">Your E-mail</span>
+                    <input type="email" name="mail" placeholder="yourmail@yahoo.com"/>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="input-group">
+                    <label class="input-group-text">Country</label>
+                    <select class="form-select" name="country" id="country" >
+                        <option selected>Choose <option>
+                            <option value="france">France</option>
+                            <option value="england">England</option>
+                            <option value="usa">USA</option>
+                            <option value="italy">Italy</option>
+                            <option value="spain">Spain</option>
+                            <option value="peru">Peru</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-group">
+                        <select class="form-select" name="subject" id="subject">
+                            <option selected>What is this about ?</option>
+                            <option value="question">Question</option>
+                            <option value="Review">Review</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <textarea class="form-control" name="request" id="request" rows=10 placeholder="Tell us more"> </textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-1">Send </button>
+            
+    </form>
+
+    <div class="row align-items-end">
+        <div class="col">
+          <footer>Copyright 2025</footer>
+        </div>
+      </div>
+    </div>
+
+</body>
